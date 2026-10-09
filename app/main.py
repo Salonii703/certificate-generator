@@ -12,7 +12,13 @@ from app import services
 from app.database import Base, engine, get_db
 from app.models import Certificate, CertStatus, Job
 from app.schemas import CertificateOut, JobCreate, JobCreated, JobOut, JobSummary
+from fastapi import FastAPI
 
+app = FastAPI()
+
+@app.get("/")
+def read_root():
+    return {"status": "running", "message": "Certificate Generator API is live"}
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
