@@ -35,6 +35,9 @@ Optional environment variables:
 | `CERT_OUTPUT_DIR` | `./output` | Where PDFs are stored |
 | `CERT_MAX_RECIPIENTS` | `1000` | Max recipients per request |
 
+# Deployed on Render 
+https://certificate-generator-1-kv5u.onrender.com/docs
+
 ## 3. Run the tests
 
 ```bash
